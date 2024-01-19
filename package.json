@@ -1,0 +1,19 @@
+{
+  "name": "web-components-fundamentals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "[",
+  "author": "Lenny <lenny.l.miller@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10"
+  }
+}

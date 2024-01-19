@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <style>
+      .dark {
+        --element-bg-color: rgb(34, 34, 70);
+        --line-color: rgb(66, 66, 117);
+        background-color: rgb(27, 27, 39);
+        color: lightgray;
+      }
+
+      body {
+        padding: 10px;
+      }
+
+      :not(:defined) {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <app-form></app-form>
+    <script>
+      // document.addEventListener("click-app-button", (event) => {
+      //   console.log("clicked the button");
+      // });
+
+      // document.addEventListener("app-input", (event) => {
+      //   console.log("app input event: ", event.target.tagName, event.detail);
+      // });
+    </script>
+    <script src="src/app/button.js" type="module"></script>
+    <script src="src/app/counter.js" type="module"></script>
+    <script src="src/app/card.js" type="module"></script>
+    <script src="src/app/input.js" type="module"></script>
+    <script src="src/app/basic-form.js" type="module"></script>
+
+
+<iframe 
+  class="w-full overflow-hidden rounded-lg ring-1 ring-slate-900/10" 
+  id="frame-7a5297f99a5ed22df80939dd1986de5f" 
+  title="Input with validation error preview" 
+  aria-label="Input with validation error preview" 
+  name="frame-7a5297f99a5ed22df80939dd1986de5f" 
+  srcdoc="<!doctype html><meta charset=&quot;utf-8&quot;><meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;><link rel=&quot;stylesheet&quot; href=&quot;/v2-assets/compiled.css?hash=ba7c741e99c638b4e2d8645bff3da47e&quot;><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/iframe-react-c4e05fce.js&quot; /><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/index-0c85f979.js&quot; /><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/iframe-a81dc9a8.js&quot; /><link rel=&quot;modulepreload&quot; href=&quot;https://tailwindui.com/build/assets/_commonjsHelpers-87174ba5.js&quot; /><script type=&quot;module&quot; src=&quot;https://tailwindui.com/build/assets/iframe-react-c4e05fce.js&quot;> </script><script type=&quot;module&quot;> (()=>{ var w=Object.create; var s=Object.defineProperty; var C=Object.getOwnPropertyDescriptor; var h=Object.getOwnPropertyNames;var A=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var d=(e,o)=>()=>(o||e((o={exports:{}}).exports,o),o.exports);var b=(e,o,a,l)=>{if(o&amp;&amp;typeof o==&quot;object&quot;||typeof o==&quot;function&quot;)for(let f of h(o))!g.call(e,f)&amp;&amp;f!==a&amp;&amp;s(e,f,{get:()=>o[f],enumerable:!(l=C(o,f))||l.enumerable});return e};var n=(e,o,a)=>(a=e!=null?w(A(e)):{},b(o||!e||!e.__esModule?s(a,&quot;default&quot;,{value:e,enumerable:!0}):a,e));var u=d((v,p)=>{p.exports=window.React});var x=d((k,m)=>{m.exports=window.ReactDOM});var r=n(u()),I=n(x());var t=n(u(),1);function B({title:e,titleId:o,...a},l){return t.createElement(&quot;svg&quot;,Object.assign({xmlns:&quot;http://www.w3.org/2000/svg&quot;,viewBox:&quot;0 0 20 20&quot;,fill:&quot;currentColor&quot;,&quot;aria-hidden&quot;:&quot;true&quot;,ref:l,&quot;aria-labelledby&quot;:o},a),e?t.createElement(&quot;title&quot;,{id:o},e):null,t.createElement(&quot;path&quot;,{fillRule:&quot;evenodd&quot;,d:&quot;M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z&quot;,clipRule:&quot;evenodd&quot;}))}var S=t.forwardRef(B),c=S;function i(){return r.default.createElement(&quot;div&quot;,{className:&quot;lx yz ze alm aqv&quot;},r.default.createElement(&quot;div&quot;,{className:&quot;gx tn ul&quot;},r.default.createElement(&quot;div&quot;,null,r.default.createElement(&quot;label&quot;,{htmlFor:&quot;email&quot;,className:&quot;lu avz awd awo axu&quot;},&quot;Email&quot;),r.default.createElement(&quot;div&quot;,{className:&quot;ab lb adu bbm&quot;},r.default.createElement(&quot;input&quot;,{type:&quot;email&quot;,name:&quot;email&quot;,id:&quot;email&quot;,className:&quot;lu tn adu afa arp atv aze bbs bbw bdh bgf bnd bne bnw cia cic&quot;,placeholder:&quot;you@example.com&quot;,defaultValue:&quot;adamwathan&quot;,&quot;aria-invalid&quot;:&quot;true&quot;,&quot;aria-describedby&quot;:&quot;email-error&quot;}),r.default.createElement(&quot;div&quot;,{className:&quot;u aa as de lx yz aub&quot;},r.default.createElement(c,{className:&quot;nz sb aza&quot;,&quot;aria-hidden&quot;:&quot;true&quot;}))),r.default.createElement(&quot;p&quot;,{className:&quot;lb avz azb&quot;,id:&quot;email-error&quot;},&quot;Not a valid email address.&quot;))))}document.body.innerHTML='<div id=&quot;app&quot;></div>';I.default.render(r.default.createElement(i),document.getElementById(&quot;app&quot;));})(); </script> <style>#app { display: contents }</style><body></body>" 
+  style="height: 160px;"
+ ></iframe>
+
+  </body>
+</html>
+

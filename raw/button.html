@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="preload" href="/fonts/Inter-roman.var.woff2?v=3.18" as="font" type="font/woff2" crossorigin="">
+    <link href="../src/output.css" rel="stylesheet">
+    <style>
+      #app {
+        display: contents;
+      }
+
+      @font-face {
+        font-family: Inter var;
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/fonts/Inter-roman.var.woff2?v=3.18") format("woff2");
+        font-named-instance: Regular;
+      }
+
+      @font-face {
+        font-family: Inter var;
+        font-style: italic;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("/fonts/Inter-italic.var.woff2?v=3.18") format("woff2");
+        font-named-instance: Italic;
+      }
+
+      body {
+        font-family: "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        -webkit-font-smoothing: antialiased;
+      }
+
+      section {
+        padding: 2rem;
+        text-align: center;
+        border: 1px solid blue;
+        border-radius: 2rem;
+      }
+
+      section.dark {
+        background-color: rgb(73, 72, 73)
+      }
+      h3 {
+        padding-top: 1rem;
+        padding-bottom: 0.2rem;
+      }
+    </style>
+    <title>InAg - Button</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="flex justify-center items-center p-8 bg-white/50">
+        <div class="max-w-xs w-full mx-auto">
+
+          <h3>Primary</h3>
+          <section>
+            <button type="button"
+              class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+              Button text
+            </button>
+          </section>
+          <h3>Secondary</h3>
+          <section>
+            <button type="button"
+              class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+              Button text
+            </button>
+          </section>
+          <h3>Primary buttons on dark</h3>
+          <section class="dark">
+            <button type="button"
+              class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+              Button text
+            </button>
+          </section>
+          <h3>Secondary buttons on dark</h3>
+          <section class="dark">
+            <button type="button"
+              class="rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20">
+              Button text
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
